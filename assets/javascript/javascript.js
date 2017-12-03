@@ -97,7 +97,7 @@ function convertCurrentWordToString(){
 	for (var i=0; i<currentWord.length; i++){
 		currentWordStr = currentWordStr + currentWord[i];
 	}
-	return currentWordStr;
+	return currentWordStr.toLowerCase();
 }
 
 // function to control End game. Either word was guessed correctly or ran out of remaining guesses.
