@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/slate/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>HANGMAN Game</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- Main HANGMAN heading -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h1> HANGMAN </h1>
+			</div>
+		</div>
+
+		<!-- Main Game area with picture on the left side -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 pictureStyle" id="wordPicture">
+				
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 gameStyle">
+				<h4 class="gameText" id="gameStatus">PRESS ANY KEY TO GET STARTED !</h4>
+				<hr>
+				<h4 class="gameText"><span> WINS: </span><span id="wins" class="gameText winText">0</span></h4>
+				<hr>
+				<h4 class="gameText"> CURRENT WORD </h4>
+				<div id="currentWord" class="gameText"></div>
+				<hr>
+				<h4 class="gameText"> NUMBER OF GUESSES REMAINING </h4>
+				<h4 class="gameText"> <span id="guessRemaining" class="guessStyle">0</span> </h4>
+				<hr>
+				<h4 class="gameText"> LETTERS ALREADY GUESSED </h4>
+				<div id="guessedLetters" class="gameText"></div>
+			</div>			
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>

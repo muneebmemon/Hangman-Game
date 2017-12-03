@@ -1,0 +1,50 @@
+body {
+	background-image: url("../images/darkness.png");
+}
+
+h1{
+	text-align: center;
+	font-family : Nosifer, cursive;
+	font-size: 75px;
+	letter-spacing: 25px;
+	color: yellow;
+}
+
+.pictureStyle {
+	padding: 5px;
+	border: 3px dashed green;
+	height: 515px;
+}
+
+.gameStyle {
+	border: 3px dashed green;
+	height: 515px;
+}
+
+.gameText {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+}
+
+.winText {
+	color:yellow;
+	font-size: 25px;
+}
+
+.guessStyle{
+	color: yellow;
+	font-size: 25px;
+}
+
+#currentWord{
+	font-size: 35px;
+	color: yellow;
+}
+
+#guessedLetters{
+	font-size: 25px;
+	color: yellow;
+}
