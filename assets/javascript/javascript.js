@@ -16,6 +16,8 @@ function startGame(){
 	letterGuessed = [];
 	wordGuessed = [];
 
+	new Audio('assets/sounds/startSound.mp3').play();
+
 	// checking to see if previous span elements for current word present and removing if they are so
 	// that it can have new elements for new game
 	if(document.getElementById("letter0")!=null){
@@ -61,6 +63,7 @@ function updateNumberOfGuesses(){
 	document.getElementById("guessRemaining").textContent = numberofGuesses;
 	if (numberofGuesses==0){
 		endGame();
+		new Audio('assets/sounds/loseSound.mp3').play();
 		document.getElementById("gameStatus").textContent = "SORRY! YOU WERE NOT ABLE TO GUESS WORD. PRESS ANY KEY TO PLAY AGAIN.";		
 	}
 }
@@ -86,6 +89,7 @@ function checkIfWin(){
 
 	if (wholeWordGuessed) {
 		wins ++;
+		new Audio('assets/sounds/winSound.mp3').play();
 		endGame();
 		document.getElementById("gameStatus").textContent = "GREAT ! YOU GUESSED THE WORD CORRECTLY. PRESS ANY KEY TO PLAY AGAIN.";
 	}
@@ -136,7 +140,7 @@ function checkLetter(keyPressed){
 
 // Function to handle Letter guessed if not a matching guess
 function handleLetterGuessed(keyPressed) {
-	// Checking to see if there is atleast one letter which is guessed
+	// Checking to see if there is atleast one letter already guessed
 	if (letterGuessed.length!=0){
 		var letterFound = false;
 		for (var i=0 ; i<letterGuessed.length ; i++) {
